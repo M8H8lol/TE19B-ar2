@@ -1,0 +1,13 @@
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\bin\Debug\netcoreapp3.1\Uppgift-3-6.exe
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\bin\Debug\netcoreapp3.1\Uppgift-3-6.deps.json
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\bin\Debug\netcoreapp3.1\Uppgift-3-6.runtimeconfig.json
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\bin\Debug\netcoreapp3.1\Uppgift-3-6.runtimeconfig.dev.json
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\bin\Debug\netcoreapp3.1\Uppgift-3-6.dll
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\bin\Debug\netcoreapp3.1\Uppgift-3-6.pdb
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\obj\Debug\netcoreapp3.1\Uppgift-3-6.csprojAssemblyReference.cache
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\obj\Debug\netcoreapp3.1\Uppgift-3-6.AssemblyInfoInputs.cache
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\obj\Debug\netcoreapp3.1\Uppgift-3-6.AssemblyInfo.cs
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\obj\Debug\netcoreapp3.1\Uppgift-3-6.csproj.CoreCompileInputs.cache
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\obj\Debug\netcoreapp3.1\Uppgift-3-6.dll
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\obj\Debug\netcoreapp3.1\Uppgift-3-6.pdb
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Uppgift-3-6\obj\Debug\netcoreapp3.1\Uppgift-3-6.genruntimeconfig.cache

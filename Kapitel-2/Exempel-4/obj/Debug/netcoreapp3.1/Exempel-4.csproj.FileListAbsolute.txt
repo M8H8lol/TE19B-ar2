@@ -1,0 +1,13 @@
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\bin\Debug\netcoreapp3.1\Exempel-4.exe
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\bin\Debug\netcoreapp3.1\Exempel-4.deps.json
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\bin\Debug\netcoreapp3.1\Exempel-4.runtimeconfig.json
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\bin\Debug\netcoreapp3.1\Exempel-4.runtimeconfig.dev.json
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\bin\Debug\netcoreapp3.1\Exempel-4.dll
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\bin\Debug\netcoreapp3.1\Exempel-4.pdb
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\obj\Debug\netcoreapp3.1\Exempel-4.csprojAssemblyReference.cache
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\obj\Debug\netcoreapp3.1\Exempel-4.AssemblyInfoInputs.cache
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\obj\Debug\netcoreapp3.1\Exempel-4.AssemblyInfo.cs
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\obj\Debug\netcoreapp3.1\Exempel-4.csproj.CoreCompileInputs.cache
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\obj\Debug\netcoreapp3.1\Exempel-4.dll
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\obj\Debug\netcoreapp3.1\Exempel-4.pdb
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-2\Exempel-4\obj\Debug\netcoreapp3.1\Exempel-4.genruntimeconfig.cache

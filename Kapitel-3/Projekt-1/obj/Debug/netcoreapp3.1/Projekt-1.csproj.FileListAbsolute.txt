@@ -1,0 +1,13 @@
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.exe
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.deps.json
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.runtimeconfig.json
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.runtimeconfig.dev.json
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.dll
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.pdb
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.csprojAssemblyReference.cache
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.AssemblyInfoInputs.cache
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.AssemblyInfo.cs
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.csproj.CoreCompileInputs.cache
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.dll
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.pdb
+C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.genruntimeconfig.cache
