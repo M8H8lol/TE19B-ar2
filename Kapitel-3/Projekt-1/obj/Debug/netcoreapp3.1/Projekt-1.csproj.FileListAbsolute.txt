@@ -11,3 +11,16 @@ C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\obj\Debug\netcore
 C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.dll
 C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.pdb
 C:\Users\amir.ismail\Desktop\Programmering\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.genruntimeconfig.cache
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.exe
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.deps.json
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.runtimeconfig.json
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.runtimeconfig.dev.json
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.dll
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\bin\Debug\netcoreapp3.1\Projekt-1.pdb
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.csprojAssemblyReference.cache
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.AssemblyInfoInputs.cache
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.AssemblyInfo.cs
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.csproj.CoreCompileInputs.cache
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.dll
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.pdb
+C:\github\te19b-ar2\Kapitel-3\Projekt-1\obj\Debug\netcoreapp3.1\Projekt-1.genruntimeconfig.cache

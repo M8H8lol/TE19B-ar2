@@ -6,23 +6,38 @@ namespace Projekt_1
     {
         static void Main(string[] args)
         {
-            string answer = "";
-            string message = "";
-            answer = Console.ReadLine();
+            Console.WriteLine("Do you want to quit? ");
 
-            if (answer == "Yes")
+            string answer = "";
+            answer = Console.ReadLine().ToLower();
+
+            if (answer == "yes")
             {
-                message = "You said 'Yes'";
+                Console.WriteLine("Okay bye! ");
+                Environment.Exit(0);
             }
-            else if (answer == "No")
+            else if (answer == "no")
             {
-                message = "You said 'No'";
+                Console.WriteLine("Are you sure? ");
+                answer = Console.ReadLine().ToLower();
+
+                if (answer == "yes")
+                {
+                    Console.WriteLine("Ok, bye!");
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    Console.WriteLine("Okay, but I do.\nBye!");
+                    Environment.Exit(0);
+                }
+
+
             }
             else
             {
-                message = "Invalid answer";
+                Console.WriteLine("Invalid answer");
             }
-            Console.WriteLine(message);
         }
     }
 }

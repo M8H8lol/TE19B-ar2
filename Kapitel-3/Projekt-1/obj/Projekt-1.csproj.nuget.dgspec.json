@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amir.ismail\\Desktop\\Programmering\\Kapitel-3\\Projekt-1\\Projekt-1.csproj": {}
+    "C:\\github\\te19b-ar2\\Kapitel-3\\Projekt-1\\Projekt-1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amir.ismail\\Desktop\\Programmering\\Kapitel-3\\Projekt-1\\Projekt-1.csproj": {
+    "C:\\github\\te19b-ar2\\Kapitel-3\\Projekt-1\\Projekt-1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amir.ismail\\Desktop\\Programmering\\Kapitel-3\\Projekt-1\\Projekt-1.csproj",
+        "projectUniqueName": "C:\\github\\te19b-ar2\\Kapitel-3\\Projekt-1\\Projekt-1.csproj",
         "projectName": "Projekt-1",
-        "projectPath": "C:\\Users\\amir.ismail\\Desktop\\Programmering\\Kapitel-3\\Projekt-1\\Projekt-1.csproj",
+        "projectPath": "C:\\github\\te19b-ar2\\Kapitel-3\\Projekt-1\\Projekt-1.csproj",
         "packagesPath": "C:\\Users\\amir.ismail\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amir.ismail\\Desktop\\Programmering\\Kapitel-3\\Projekt-1\\obj\\",
+        "outputPath": "C:\\github\\te19b-ar2\\Kapitel-3\\Projekt-1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amir.ismail\\AppData\\Roaming\\NuGet\\NuGet.Config",
