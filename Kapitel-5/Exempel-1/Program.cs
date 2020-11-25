@@ -8,7 +8,7 @@ namespace Exempel_1
         {
             // Alt 1: HÄr skapar vi en array på 3 strings
             // Skapa en array av tre städers namn: "Stockholm", "Paris", "London"
-            string[] städer = { "Stockholm", "Paris", "London" } // Låst till 3!
+            string[] städer = { "Stockholm", "Paris", "London" }; // Låst till 3!
 
             // Skriver ut innehållet
             // städer[0] = "Stockholm"  // index = 0
@@ -16,10 +16,10 @@ namespace Exempel_1
             // städer[2] = "London"     // index = 2
 
             // Alt 2: Skapa en tom array på 2 strings
-            string[] länder = new string[2]
+            string[] länder = new string[2];
 
             // Skapa en annan array av 3 tal
-            int[] årtal = new int[3]
+            int[] årtal = new int[3];
 
             // Fylla en array
             länder[0] = "Frankrike";
