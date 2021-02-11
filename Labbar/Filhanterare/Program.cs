@@ -8,7 +8,7 @@ namespace Filhanterare
         static void Main(string[] args)
         {
             // Skriva till en textfil
-            File.WriteAllText("fil1.txt","Nu snöar det igen! Kul!");
+            File.WriteAllText("fil1.txt", "Nu snöar det igen! Kul!");
 
             string allText = File.ReadAllText("./Filhanterare.csproj");
 

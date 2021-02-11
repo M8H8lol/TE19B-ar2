@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Expert10000
 {
@@ -14,7 +15,7 @@ namespace Expert10000
 
             // Kontrollera att användaren matar in ett tal
             // Isåfall översätt från string -> tal
-            while (!double.TryParse(svar, out timmarPerDag) && timmarPerDag <= 0) ; // -> true / false
+            while (!double.TryParse(svar, out timmarPerDag) && timmarPerDag <= 0)  // -> true / false
             {
                 Console.WriteLine("Ogiltig input, vg försök igen! ");
                 svar = Console.ReadLine();
