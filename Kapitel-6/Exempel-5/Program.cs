@@ -4,26 +4,27 @@ namespace Exempel_5
 {
     class Program
     {
-        // EN klassvariabel
-        static string respons = "Du skrev inte ett heltal, vg försök igen";
         static void Main(string[] args)
         {
-            Console.WriteLine("Ange ett heltal");
-            int tal = ReadInt();
+            // Använder den första metoden
+            SkrivVertikalt("Hej");
+
+            // Testa den andra metoden
+            SkrivVertikalt(12);
         }
 
-        /// <summary>
-        /// Metoden ör säkert sätt att läsa in heltal
-        /// </summary>
-        /// <returns>Heltal</returns>
-        static int ReadInt()
+        static void SkrivVertikalt(string meddelande)
         {
-            int svar = 0;
-            while (!int.TryParse(Console.ReadLine(), out svar))     // ! == false
+            // Loopa igenom texten tecken för tecken
+            for (int i = 0; i < meddelande.Length; i++)
             {
-                Console.WriteLine(respons);
+                Console.WriteLine(meddelande[i]);
             }
-            return svar;
+        }
+
+        static void SkrivVertikalt(int tal)
+        {
+            SkrivVertikalt(tal.ToString());
         }
     }
 }
