@@ -17,7 +17,6 @@ namespace Bildatabas
             Console.Write("Hur stor är bilens tank: ");
             string svarTankensInnehåll = Console.ReadLine();
             // double tankensInnehåll = double.Parse(svarTankensInnehåll);
-            // @todo fixa tryParse där det finns double.Parse och int.Parse
             double tankensInnehåll = 0;
             while (!double.TryParse(svarTankensInnehåll, out tankensInnehåll))
             {
@@ -44,14 +43,12 @@ namespace Bildatabas
                 Console.Write("Ange hastighet (km/h): ");
                 string svarHastighet = Console.ReadLine();
                 int hastighet = 0;
-                while (!int.TryParse(svarHastighet, out hastighet))
+                while (!int.TryParse(svarHastighet, out hastighet) || hastighet > 200)
                 {
                     Console.WriteLine("Ogitligt svar, hastigheten måste vara under 200");
+                    Console.Write("Ange hastighet (km/h): ");
                     svarHastighet = Console.ReadLine();
                 }
-
-                // @todo 
-                // Max hastighet är 200 km/h, be användaren mata in en giltig hastighet
 
                 // Frågar hur länge bilen körde
                 Console.Write("Ange tid (min): ");
@@ -68,16 +65,21 @@ namespace Bildatabas
 
                 // Kallar in metoden för att räkan ut det totala avståndet
                 int totalAvstånd = RäknaUtKörsträcka(hastighet, int.Parse(svarTid));
-                // @todo fixa tryParse där det finns double.Parse och int.Parse
                 Console.WriteLine($"Ditt avstånd är {totalAvstånd}");
 
                 // Kallar på metoden för att räkna ut den totala förbrukningen
+                double restITank = tankensInnehåll;
                 double totalFörbrukning = RäknaUtTotalFörbrukning(double.Parse(svarFörbrukning), totalAvstånd);
-                // @todo fixa tryParse där det finns double.Parse och int.Parse
+                tankensInnehåll = RäknaUtKvarITanken(tankensInnehåll, totalFörbrukning);
+                if (tankensInnehåll < 0)
+                {
+                    Console.WriteLine("Tanken är tom, du måste fylla på den innan din nästa resa");
+                    tankensInnehåll = 0;
+                    totalFörbrukning = restITank;
+                }
                 Console.WriteLine($"Bilens totala förbrukning är {totalFörbrukning}");
 
                 // Kallar på metoden för att räkna ut hur mycket som finns kvar i tanken
-                tankensInnehåll = RäknaUtKvarITanken(tankensInnehåll, totalFörbrukning);
                 Console.WriteLine($"Bilen har kvar {tankensInnehåll} liter i tanken");
 
                 // Frågar om användaren vill lägga till fler resor
@@ -121,12 +123,12 @@ namespace Bildatabas
         /// <summary>
         /// Räknar ut den mängd bensin som finns kvar i tanken
         /// </summary>
-        /// <param name="fullTank"></param>
+        /// <param name="restITank"></param>
         /// <param name="förbrukning"></param>
         /// <returns>kvarITanken</returns>
-        static double RäknaUtKvarITanken(double fullTank, double förbrukning)
+        static double RäknaUtKvarITanken(double restITank, double förbrukning)
         {
-            double kvarITanken = fullTank - förbrukning;
+            double kvarITanken = restITank - förbrukning;
             return kvarITanken;
         }
     }
