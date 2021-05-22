@@ -16,6 +16,7 @@ namespace Bildatabas
             // Frågar efter bilentankens volym
             Console.Write("Hur stor är bilens tank: ");
             string svarTankensInnehåll = Console.ReadLine();
+
             // double tankensInnehåll = double.Parse(svarTankensInnehåll);
             double tankensInnehåll = 0;
             while (!double.TryParse(svarTankensInnehåll, out tankensInnehåll))
