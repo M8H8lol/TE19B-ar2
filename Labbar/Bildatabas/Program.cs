@@ -65,7 +65,7 @@ namespace Bildatabas
 
                 string svar = Console.ReadLine();
 
-                // Om användaren inte vill fortsätta, så avslutar programmet
+                // Om användaren inte vill fortsätta, så avslutas programmet
                 if (svar == "n")
                 {
                     Console.WriteLine($"Tack {svarNamn} för att du använde vårt program! Kör försiktigt!");
