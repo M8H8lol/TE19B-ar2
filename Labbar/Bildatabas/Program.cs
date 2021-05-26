@@ -25,6 +25,7 @@ namespace Bildatabas
             int vilkenResa = 0;
             while (true)
             {
+                // Ser till att varje gång man vill ange en till resa så är det resan innan +1
                 vilkenResa++;
 
                 // Numrerar resorna
@@ -67,7 +68,7 @@ namespace Bildatabas
                 // Om användaren inte vill fortsätta, så avslutar programmet
                 if (svar == "n")
                 {
-                    Console.WriteLine($"Tack {svarNamn} för att du använde vårt program");
+                    Console.WriteLine($"Tack {svarNamn} för att du använde vårt program! Kör försiktigt!");
                     break;
                 }
             }
