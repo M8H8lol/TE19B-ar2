@@ -106,6 +106,13 @@ namespace Bildatabas
         {
             return restITankLiter - förbrukningPerMil;
         }
+
+        /// <summary>
+        /// Kallar på while loopen som används flera gånger under programmet
+        /// </summary>
+        /// <param name="fråga"></param>
+        /// <param name="errorMeddelande"></param>
+        /// <returns>svar</returns>
         static double FrågaEfterDouble(string fråga, string errorMeddelande)
         {
             Console.Write(fråga);
