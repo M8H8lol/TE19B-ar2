@@ -4,6 +4,7 @@ namespace Bildatabas
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             // Introducerar programmet för använderen
@@ -14,22 +15,11 @@ namespace Bildatabas
             string svarNamn = Console.ReadLine();
 
             // Frågar efter bilentankens volym
-            Console.Write("Hur stor är bilens tank: ");
-            string svarTankensInnehåll = Console.ReadLine();
-
-            // double tankensInnehåll = double.Parse(svarTankensInnehåll);
-            double tankensInnehåll = 0;
-            while (!double.TryParse(svarTankensInnehåll, out tankensInnehåll))
-            {
-                Console.WriteLine("Ogiltigt svar, var vänlig försök igen. ");
-                svarTankensInnehåll = Console.ReadLine();
-            }
+            // Medans den parsade stringen inte är en double så får man ett felmeddelande
+            double tankensInnehåll = FrågaEfterDouble("Hur stor är bilens tank: ", "Ogiltigt svar, var vänlig försök igen. ");
 
             // Frågar efter bilens förbrukning
-            Console.Write("Ange förbrukning (l/mil): ");
-            string svarFörbrukning = Console.ReadLine();
-            // @todo 
-            // Fixa så att programmet inte crashar om man matar in 0.8 (tryParse)
+            double förbrukning = FrågaEfterDouble("Ange förbrukning (l/mil): ", "Ogiltigt svar, var vänlig försök igen");
 
             // Skapar en whileoop för att fråga om yttligare resor
             int vilkenResa = 0;
@@ -41,36 +31,22 @@ namespace Bildatabas
                 Console.WriteLine($"\nResa {vilkenResa}");
 
                 // Frågar efter hastigheten under resan
-                Console.Write("Ange hastighet (km/h): ");
-                string svarHastighet = Console.ReadLine();
-                int hastighet = 0;
-                while (!int.TryParse(svarHastighet, out hastighet) || hastighet > 200)
-                {
-                    Console.WriteLine("Ogitligt svar, hastigheten måste vara under 200");
-                    Console.Write("Ange hastighet (km/h): ");
-                    svarHastighet = Console.ReadLine();
-                }
+                double hastighet = FrågaEfterDouble("Ange hastighet (km/h): ", "Ogiltigt svar, hastigheten måste vara under 200 km/h");
 
                 // Frågar hur länge bilen körde
-                Console.Write("Ange tid (min): ");
-                string svarTid = Console.ReadLine();
-                int tid = 0;
-                while (!int.TryParse(svarTid, out tid))
-                {
-                    Console.WriteLine("Ogiltig tid, får inte vara mer än 2000 minuter");
-                }
+                double tid = FrågaEfterDouble("Ange tid (min): ", "Ogiltig tid, får inte vara mer än 2000 minuter");
 
                 // @todo
                 // Vad händer om bensinen inte räcker?
                 // Skriv ut den faktiska resan och avbryt. 
 
                 // Kallar in metoden för att räkan ut det totala avståndet
-                int totalAvstånd = RäknaUtKörsträcka(hastighet, int.Parse(svarTid));
+                double totalAvstånd = RäknaUtKörsträcka(hastighet, tid);
                 Console.WriteLine($"Ditt avstånd är {totalAvstånd}");
 
                 // Kallar på metoden för att räkna ut den totala förbrukningen
                 double restITank = tankensInnehåll;
-                double totalFörbrukning = RäknaUtTotalFörbrukning(double.Parse(svarFörbrukning), totalAvstånd);
+                double totalFörbrukning = FörbrukningILiter(förbrukning, totalAvstånd);
                 tankensInnehåll = RäknaUtKvarITanken(tankensInnehåll, totalFörbrukning);
                 if (tankensInnehåll < 0)
                 {
@@ -103,10 +79,9 @@ namespace Bildatabas
         /// <param name="hastighet"></param>
         /// <param name="tid"></param>
         /// <returns>avstånd</returns>
-        static int RäknaUtKörsträcka(int hastighet, int tid)
+        static double RäknaUtKörsträcka(double hastighetKm, double tidMin)
         {
-            int avstånd = hastighet * tid / 60;
-            return avstånd;
+            return hastighetKm * tidMin / 60;
         }
 
         /// <summary>
@@ -115,10 +90,9 @@ namespace Bildatabas
         /// <param name="förbrukning"></param>
         /// <param name="sträcka"></param>
         /// <returns>totalFörbrukning</returns>
-        static double RäknaUtTotalFörbrukning(double förbrukning, int sträcka)
+        static double FörbrukningILiter(double förbrukningPerMil, double sträckaKm)
         {
-            double totalFörbrukning = förbrukning * sträcka / 10;
-            return totalFörbrukning;
+            return förbrukningPerMil * sträckaKm / 10;
         }
 
         /// <summary>
@@ -127,10 +101,19 @@ namespace Bildatabas
         /// <param name="restITank"></param>
         /// <param name="förbrukning"></param>
         /// <returns>kvarITanken</returns>
-        static double RäknaUtKvarITanken(double restITank, double förbrukning)
+        static double RäknaUtKvarITanken(double restITankLiter, double förbrukningPerMil)
         {
-            double kvarITanken = restITank - förbrukning;
-            return kvarITanken;
+            return restITankLiter - förbrukningPerMil;
+        }
+        static double FrågaEfterDouble(string fråga, string errorMeddelande)
+        {
+            Console.Write(fråga);
+            double svar = 0;
+            while (!double.TryParse(Console.ReadLine().Replace('.', ','), out svar))
+            {
+                Console.WriteLine(errorMeddelande);
+            }
+            return svar;
         }
     }
 }
